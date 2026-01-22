@@ -76,7 +76,7 @@ nasa-apod-explorer/
    ```
    The app will open at `http://localhost:5173`.
 
-## API Endpoints
+## Rest API Endpoints
 
 - `GET /api/apod/today` - Get today's APOD
 - `GET /api/apod?date=YYYY-MM-DD` - Get APOD for specific date
