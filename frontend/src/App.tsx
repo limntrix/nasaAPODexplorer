@@ -21,7 +21,7 @@ function App() {
                     getRecentApods(12)
                 ]);
                 setTodayApod(today);
-                // Filter out today from recent if present to avoid duplication, though API behavior varies
+               
                 setRecentApods(recent.filter(r => r.date !== today.date));
             } catch (err) {
                 setError('Failed to load APOD data. Please ensure the backend is running.');
@@ -61,7 +61,7 @@ function App() {
     return (
         <div className="container">
             <header>
-                <h1>NASA APOD Explorer 🚀</h1>
+                <h1>NASA APOD Explorer</h1>
                 <p style={{ color: 'var(--text-secondary)' }}>Discover the cosmos! Each day a different image or photograph of our fascinating universe.</p>
             </header>
 
